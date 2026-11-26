@@ -1,7 +1,7 @@
 /**
  * Aplikasi Website Tes Sumatif
- * SEKOLAH DASAR - JEMBRANA - KELAS VI
- * Mata Pelajaran: MATEMATIKA (TKA)
+ * SD NEGERI 3 DANGINTUKADAYA - JEMBRANA - KELAS 5
+ * Mata Pelajaran: IPAS
  */
 
 import React, { useState, useEffect } from 'react';
@@ -14,8 +14,9 @@ import { Stage2Exam } from './components/Stage2Exam';
 import { Stage3Result } from './components/Stage3Result';
 import { Stage4TeacherPanel } from './components/Stage4TeacherPanel';
 import { TeacherAuthModal } from './components/TeacherAuthModal';
+import { ThemeBackground } from './components/ThemeBackground';
 
-const STORAGE_QUESTIONS_KEY = 'sd3_loloan_timur_questions_v2';
+const STORAGE_QUESTIONS_KEY = 'sd3_dangintukadaya_ipas_questions_v1';
 const STORAGE_ALLOW_REVIEW_KEY = 'sd3_loloan_timur_allow_review';
 const STORAGE_STRICT_SECURITY_KEY = 'sd3_strict_exam_mode';
 
@@ -165,7 +166,10 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen flex flex-col bg-slate-50 text-slate-900 selection:bg-blue-600 selection:text-white">
+    <div className="relative min-h-screen flex flex-col bg-ipas-theme text-slate-900 selection:bg-blue-600 selection:text-white">
+      {/* Latar Belakang Tematik IPAS */}
+      <ThemeBackground />
+
       {/* Header Navigasi Atas */}
       <Navbar
         currentStage={currentStage}
@@ -174,7 +178,7 @@ export default function App() {
       />
 
       {/* Konten Utama Berdasarkan Tahap */}
-      <main className="flex-1">
+      <main className="flex-1 relative z-10">
         {/* TAHAP 1: IDENTITAS SISWA */}
         {currentStage === 1 && (
           <Stage1Identity
@@ -219,9 +223,9 @@ export default function App() {
       </main>
 
       {/* Footer Resmi */}
-      <footer className="bg-white border-t border-slate-200 py-6 text-center text-xs text-slate-500">
+      <footer className="relative z-10 bg-white/85 backdrop-blur-md border-t border-blue-200/70 py-6 text-center text-xs text-slate-600">
         <div className="max-w-7xl mx-auto px-4 space-y-1.5">
-          <p id="footer-developer-credit" className="font-semibold text-slate-700">
+          <p id="footer-developer-credit" className="font-semibold text-slate-800">
             Web Developer-susilo fitri yatmoko
           </p>
           <p>

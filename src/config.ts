@@ -4,17 +4,17 @@
  */
 
 export const CONFIG = {
-  SEKOLAH: "SEKOLAH DASAR",
+  SEKOLAH: "SD NEGERI 3 DANGINTUKADAYA",
   ALAMAT_SEKOLAH: "Jembrana",
   KOTA: "Jembrana",
-  KELAS: "VI",
-  MATA_PELAJARAN: "MATEMATIKA",
-  MATERI: "TKA (Tes Kemampuan Akademik)",
-  GURU: "........................................",
-  NIP_GURU: "........................................",
+  KELAS: "5",
+  MATA_PELAJARAN: "IPAS",
+  MATERI: "Siklus Air, Ekosistem, Ekonomi & Kenampakan Alam",
+  GURU: "Gusti Ayu Kade Ari Rahmayanti, S.Pd",
+  NIP_GURU: "19980419 202221 2 001",
   KEPALA_SEKOLAH: "........................................",
   NIP_KEPALA_SEKOLAH: "........................................",
-  KKTP: 70,
+  KKTP: 65,
   ADMIN_PASSWORD: "GURUADMIN",
   
   // Endpoint Google Apps Script Web App utama bawaan aplikasi

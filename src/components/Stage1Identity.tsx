@@ -90,16 +90,23 @@ export const Stage1Identity: React.FC<Stage1IdentityProps> = ({
 
   // Generate opsi hari (1 - 31)
   const days = Array.from({ length: 31 }, (_, i) => String(i + 1));
-  // Generate opsi tahun (2010 - 2016 untuk siswa kelas 6 SD)
+  // Generate opsi tahun (rentang usia siswa kelas 5 SD)
   const currentYear = new Date().getFullYear();
-  const years = Array.from({ length: 10 }, (_, i) => String(currentYear - 16 + i));
+  const years = Array.from({ length: 10 }, (_, i) => String(currentYear - 15 + i));
 
   return (
     <div className="max-w-4xl mx-auto py-8 px-4 sm:px-6">
       {/* Header Pengumuman Tes */}
       <div className="text-center mb-8">
+        <div className="mx-auto mb-3 w-20 h-20 sm:w-24 sm:h-24 rounded-2xl bg-white p-1.5 shadow-sm border border-slate-200 flex items-center justify-center">
+          <img
+            src="/assets/aistudio/WhatsApp_Image_2026-11-24_at_14.04.48_44be7a26.jpeg"
+            alt={`Logo Kelas ${CONFIG.KELAS} ${CONFIG.SEKOLAH}`}
+            className="w-full h-full object-contain rounded-xl"
+          />
+        </div>
         <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-          Tes Sumatif Matematika Kelas {CONFIG.KELAS}
+          Tes Sumatif {CONFIG.MATA_PELAJARAN} Kelas {CONFIG.KELAS}
         </h2>
         <p className="mt-2 text-sm text-slate-600 max-w-xl mx-auto">
           Materi Pokok: <span className="font-semibold text-slate-800">{CONFIG.MATERI}</span>.

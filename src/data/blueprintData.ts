@@ -2,7 +2,7 @@ import { Question, QuestionBlueprint, CognitiveLevel, Difficulty } from '../type
 
 /**
  * Data Acuan Matriks Kisi-Kisi Penulisan Soal Tes Sumatif
- * Kurikulum Merdeka - Fase C (Kelas VI) Mata Pelajaran Matematika
+ * Kurikulum Merdeka - Fase C (Kelas 5) Mata Pelajaran IPAS
  */
 
 export interface BlueprintDefinition {
@@ -13,276 +13,276 @@ export interface BlueprintDefinition {
   bobotSkor: number;
 }
 
-// Peta acuan default 30 butir soal Kurikulum Merdeka
+// Peta acuan default 30 butir soal IPAS Kurikulum Merdeka
 export const DEFAULT_BLUEPRINT_MAP: Record<number, BlueprintDefinition> = {
   1: {
-    elemen: 'Bilangan',
+    elemen: 'Pemahaman IPAS (Sains)',
     tujuanPembelajaran:
-      'Peserta didik dapat menyelesaikan masalah operasi hitung bilangan bulat negatif dan positif dalam kehidupan sehari-hari.',
+      'Peserta didik dapat mengidentifikasi tahapan siklus air dan perubahan wujud air di alam.',
     indikatorSoal:
-      'Disajikan narasi perubahan suhu es yang dipanaskan secara berkala, peserta didik dapat menentukan suhu akhir es setelah waktu pemanasan tertentu.',
+      'Disajikan gambar diagram siklus air bernomor 1-4, peserta didik dapat menentukan nama tahapan yang ditunjukkan oleh angka 2 dan 3 secara berurutan.',
     levelKognitif: 'L1',
     bobotSkor: 1,
   },
   2: {
-    elemen: 'Bilangan',
+    elemen: 'Pemahaman IPAS (Sains)',
     tujuanPembelajaran:
-      'Peserta didik dapat menyelesaikan masalah penalaran yang melibatkan operasi hitung campuran pecahan dan bilangan cacah.',
+      'Peserta didik dapat menganalisis keterkaitan proses infiltrasi pada siklus air dengan kelestarian lingkungan.',
     indikatorSoal:
-      'Disajikan cerita kontekstual panen beras (kuintal) yang dijual dan dibagi rata ke beberapa tetangga, peserta didik dapat menghitung berat beras yang diterima tiap orang dalam satuan kilogram.',
+      'Disajikan narasi penutupan daerah resapan air dengan aspal dan beton, peserta didik dapat memprediksi dampak lingkungan yang ditimbulkan terhadap ketersediaan air dan banjir.',
     levelKognitif: 'L2',
     bobotSkor: 1,
   },
   3: {
-    elemen: 'Bilangan',
+    elemen: 'Pemahaman IPAS (Sains)',
     tujuanPembelajaran:
-      'Peserta didik dapat mengaplikasikan konsep Faktor Persekutuan Terbesar (FPB) untuk menyelesaikan permasalahan pembagian barang secara merata.',
+      'Peserta didik dapat mengelompokkan jenis ekosistem air (akuatik) dan ekosistem darat (terestrial).',
     indikatorSoal:
-      'Disajikan data tiga jenis perlengkapan belajar yang akan dibagikan sama banyak kepada siswa berprestasi, peserta didik dapat menentukan jumlah siswa terbanyak penerima dan jumlah pensil yang didapat masing-masing siswa.',
-    levelKognitif: 'L2',
-    bobotSkor: 1,
-  },
-  4: {
-    elemen: 'Bilangan',
-    tujuanPembelajaran:
-      'Peserta didik dapat menerapkan konsep Kelipatan Persekutuan Terkecil (KPK) dalam menentukan jadwal atau waktu kejadian bersamaan.',
-    indikatorSoal:
-      'Disajikan interval waktu berbunyinya tiga lonceng pos kamling pada pukul tertentu, peserta didik dapat menentukan waktu saat ketiga lonceng berbunyi bersamaan kembali untuk kedua kalinya.',
+      'Disajikan beberapa kelompok nama ekosistem, peserta didik dapat mengidentifikasi kelompok yang seluruhnya termasuk ekosistem darat (terestrial).',
     levelKognitif: 'L1',
     bobotSkor: 1,
   },
-  5: {
-    elemen: 'Aljabar',
+  4: {
+    elemen: 'Pemahaman IPAS (Sains)',
     tujuanPembelajaran:
-      'Peserta didik dapat memahami konsep rasio, perbandingan, dan skala pada peta atau denah.',
+      'Peserta didik dapat mengidentifikasi karakteristik ekosistem darat berdasarkan ciri biotik dan abiotiknya.',
     indikatorSoal:
-      'Disajikan jarak dua kota pada peta dan skala tertentu, peserta didik dapat menghitung jarak sebenarnya antara kedua kota tersebut dalam satuan kilometer.',
+      'Disajikan gambar ilustrasi berbagai ekosistem, peserta didik dapat menentukan nama dua ekosistem darat (gurun dan tundra) berdasarkan ciri visualnya.',
+    levelKognitif: 'L2',
+    bobotSkor: 1,
+  },
+  5: {
+    elemen: 'Pemahaman IPAS (Sains)',
+    tujuanPembelajaran:
+      'Peserta didik dapat menjelaskan peran komponen produsen, konsumen, dan pengurai dalam rantai makanan.',
+    indikatorSoal:
+      'Disajikan deskripsi peran pengurai zat organik di alam, peserta didik dapat menentukan komponen rantai makanan yang dimaksud.',
     levelKognitif: 'L1',
     bobotSkor: 1,
   },
   6: {
-    elemen: 'Aljabar',
+    elemen: 'Pemahaman IPAS (Sains)',
     tujuanPembelajaran:
-      'Peserta didik dapat menyelesaikan masalah proporsi dan perbandingan senilai yang berkaitan dengan selisih dan jumlah nilai.',
+      'Peserta didik dapat menyusun urutan rantai makanan pada ekosistem sawah dengan tepat.',
     indikatorSoal:
-      'Disajikan perbandingan umur dua orang dan selisih umur mereka, peserta didik dapat menghitung jumlah umur kedua orang tersebut seluruhnya.',
+      'Disajikan gambar diagram rantai makanan sawah dan pilihan makhluk hidup, peserta didik dapat menyusun urutan produsen hingga pengurai yang tepat.',
     levelKognitif: 'L2',
     bobotSkor: 1,
   },
   7: {
-    elemen: 'Aljabar',
+    elemen: 'Pemahaman IPAS (Sains)',
     tujuanPembelajaran:
-      'Peserta didik dapat menganalisis permasalahan gerak lurus beraturan (kecepatan rata-rata, jarak, dan waktu) untuk kasus berpapasan.',
+      'Peserta didik dapat menentukan kedudukan makhluk hidup dalam rantai makanan ekosistem laut.',
     indikatorSoal:
-      'Disajikan jarak dua kota, waktu keberangkatan yang sama, dan kecepatan dua kendaraan yang berpapasan, peserta didik dapat menganalisis dan menentukan pukul berapa kedua kendaraan saling berpapasan.',
-    levelKognitif: 'L3',
-    bobotSkor: 1,
-  },
-  8: {
-    elemen: 'Pengukuran',
-    tujuanPembelajaran:
-      'Peserta didik dapat menyelesaikan masalah yang melibatkan hubungan antara volume bangun ruang, debit aliran zat cair, dan waktu pengisian.',
-    indikatorSoal:
-      'Disajikan ukuran bak penampungan air berbentuk balok dan debit kran air pengisi, peserta didik dapat menghitung waktu yang dibutuhkan untuk mengisi bak hingga penuh.',
+      'Disajikan narasi aliran makan-dimakan pada ekosistem laut lepas, peserta didik dapat menentukan kedudukan trofik ikan tuna sebagai konsumen tingkat 2.',
     levelKognitif: 'L2',
     bobotSkor: 1,
   },
-  9: {
-    elemen: 'Geometri',
+  8: {
+    elemen: 'Keterampilan Proses',
     tujuanPembelajaran:
-      'Peserta didik dapat menghitung keliling lingkaran dan mengaplikasikannya dalam pemecahan masalah lingkungan sekitar.',
+      'Peserta didik dapat menganalisis hubungan antarpopulasi pada jaring-jaring makanan ketika terjadi gangguan.',
     indikatorSoal:
-      'Disajikan diameter sebuah taman berbentuk lingkaran yang akan dipasangi lampu penerangan dengan jarak tertentu, peserta didik dapat menentukan jumlah lampu yang dibutuhkan.',
-    levelKognitif: 'L1',
+      'Disajikan gambar jaring-jaring makanan ekosistem darat, peserta didik dapat menganalisis dampak penurunan populasi belalang dan tikus terhadap populasi konsumen lainnya.',
+    levelKognitif: 'L3',
+    bobotSkor: 1,
+  },
+  9: {
+    elemen: 'Keterampilan Proses',
+    tujuanPembelajaran:
+      'Peserta didik dapat mengevaluasi hubungan sebab-akibat perubahan populasi dalam keseimbangan ekosistem sawah.',
+    indikatorSoal:
+      'Disajikan studi kasus "Misteri Tikus yang Merajalela" saat populasi ular menurun di sawah, peserta didik dapat menganalisis akibat yang terjadi pada tanaman padi dan elang.',
+    levelKognitif: 'L3',
     bobotSkor: 1,
   },
   10: {
-    elemen: 'Geometri',
+    elemen: 'Pemahaman IPAS (Sains)',
     tujuanPembelajaran:
-      'Peserta didik dapat menghitung luas gabungan bangun datar (persegi panjang dan lingkaran).',
+      'Peserta didik dapat menjelaskan konsep aliran energi dan perbandingan jumlah populasi pada piramida makanan.',
     indikatorSoal:
-      'Disajikan gambar bangun datar gabungan antara persegi panjang dan setengah lingkaran berimpit, peserta didik dapat menghitung luas gabungan bangun tersebut.',
+      'Disajikan gambar piramida makanan, peserta didik dapat menjelaskan alasan bagian dasar (produsen) berukuran paling lebar dibandingkan konsumen puncak.',
     levelKognitif: 'L2',
     bobotSkor: 1,
   },
   11: {
-    elemen: 'Pengukuran',
+    elemen: 'Pemahaman IPAS (Sains)',
     tujuanPembelajaran:
-      'Peserta didik dapat menganalisis dan menghitung volume bangun ruang tabung serta konversi volume ke satuan liter.',
+      'Peserta didik dapat membedakan peran positif dan peran negatif manusia terhadap keseimbangan ekosistem.',
     indikatorSoal:
-      'Disajikan dimensi drum penampung minyak berbentuk tabung yang telah terisi sebagian (pecahan), peserta didik dapat menganalisis sisa volume minyak yang dibutuhkan hingga penuh dalam satuan liter.',
-    levelKognitif: 'L3',
+      'Disajikan empat pilihan aktivitas manusia, peserta didik dapat mengidentifikasi tindakan yang berdampak negatif terhadap keseimbangan ekosistem.',
+    levelKognitif: 'L1',
     bobotSkor: 1,
   },
   12: {
-    elemen: 'Geometri',
+    elemen: 'Pemahaman IPAS (Sosial)',
     tujuanPembelajaran:
-      'Peserta didik dapat menghitung luas permukaan bangun ruang kubus dalam konteks pemecahan masalah sehari-hari.',
+      'Peserta didik dapat mengidentifikasi jenis-jenis bidang usaha dalam aktivitas ekonomi masyarakat.',
     indikatorSoal:
-      'Disajikan ukuran rusuk sebuah kotak kado berbentuk kubus, peserta didik dapat menentukan luas minimal kertas kado yang dibutuhkan untuk menutup seluruh permukaannya.',
+      'Disajikan definisi kegiatan mengolah bahan mentah menjadi barang jadi atau setengah jadi, peserta didik dapat menentukan nama bidang usahanya.',
     levelKognitif: 'L1',
     bobotSkor: 1,
   },
   13: {
-    elemen: 'Analisis Data dan Peluang',
+    elemen: 'Pemahaman IPAS (Sosial)',
     tujuanPembelajaran:
-      'Peserta didik dapat menentukan nilai rata-rata (mean) dari sekumpulan data tunggal.',
+      'Peserta didik dapat mengklasifikasikan contoh aktivitas pelaku ekonomi berdasarkan bidang usahanya.',
     indikatorSoal:
-      'Disajikan sekumpulan data perolehan nilai ulangan harian siswa, peserta didik dapat menghitung nilai rata-rata (mean) dari data tersebut.',
-    levelKognitif: 'L1',
+      'Disajikan ilustrasi kegiatan warga yang menanam kopi skala besar dan membuka kios barang kebutuhan, peserta didik dapat menentukan kedua bidang usaha tersebut secara berurutan.',
+    levelKognitif: 'L2',
     bobotSkor: 1,
   },
   14: {
-    elemen: 'Analisis Data dan Peluang',
+    elemen: 'Pemahaman IPAS (Sosial)',
     tujuanPembelajaran:
-      'Peserta didik dapat menganalisis data tunggal untuk menentukan nilai median (nilai tengah) dan modus.',
+      'Peserta didik dapat mengidentifikasi contoh kegiatan produksi, distribusi, dan konsumsi dalam kehidupan sehari-hari.',
     indikatorSoal:
-      'Disajikan data berat badan sejumlah siswa peserta cerdas cermat yang belum berurutan, peserta didik dapat menentukan nilai median dan modus secara tepat.',
+      'Disajikan gambar 9 kartu kegiatan ekonomi, peserta didik dapat menentukan jenis kegiatan ekonomi (distribusi dan konsumsi) dari dua ilustrasi yang ditunjuk.',
     levelKognitif: 'L2',
     bobotSkor: 1,
   },
   15: {
-    elemen: 'Aljabar',
+    elemen: 'Pemahaman IPAS (Sosial)',
     tujuanPembelajaran:
-      'Peserta didik dapat menyelesaikan masalah aritmatika sosial yang berkaitan dengan persentase diskon (potongan harga).',
+      'Peserta didik dapat menjelaskan peran produsen, distributor, dan konsumen dalam kegiatan ekonomi.',
     indikatorSoal:
-      'Disajikan harga barang sebelum diskon dan persentase potongan harga belanja pendidikan, peserta didik dapat menghitung jumlah uang yang harus dibayar oleh pembeli.',
+      'Disajikan deskripsi peran penyalur barang dari produsen ke konsumen, peserta didik dapat menentukan sebutan pelaku ekonomi tersebut.',
     levelKognitif: 'L1',
     bobotSkor: 1,
   },
   16: {
-    elemen: 'Analisis Data dan Peluang',
+    elemen: 'Pemahaman IPAS (Sosial)',
     tujuanPembelajaran:
-      'Peserta didik dapat menyajikan dan menafsirkan data dalam bentuk diagram lingkaran.',
+      'Peserta didik dapat menerapkan sikap saling menghargai keragaman sifat dan bekerja sama dalam kehidupan sehari-hari.',
     indikatorSoal:
-      'Disajikan diagram lingkaran persentase pilihan kegiatan ekstrakurikuler beserta jumlah total siswa, peserta didik dapat menghitung banyak siswa yang memilih ekstrakurikuler tertentu.',
+      'Disajikan kisah perbedaan sifat Nala dan Niki saat persiapan pameran karya siswa, peserta didik dapat menentukan cara kerja sama yang saling melengkapi.',
     levelKognitif: 'L2',
     bobotSkor: 1,
   },
   17: {
-    elemen: 'Bilangan',
+    elemen: 'Pemahaman IPAS (Sosial)',
     tujuanPembelajaran:
-      'Peserta didik dapat menentukan akar pangkat tiga dari bilangan kubik yang berkaitan dengan volume kubus.',
+      'Peserta didik dapat menyimpulkan nilai karakter positif dari keragaman sifat tokoh dalam cerita.',
     indikatorSoal:
-      'Disajikan volume bak penampungan air berbentuk kubus, peserta didik dapat menentukan panjang rusuk bagian dalam bak tersebut.',
-    levelKognitif: 'L2',
+      'Disajikan gambar ilustrasi dan ringkasan cerita anak kembar Saka dan Seli saat membantu desa pascabadai, peserta didik dapat mengidentifikasi nilai karakter yang tercermin.',
+    levelKognitif: 'L1',
     bobotSkor: 1,
   },
   18: {
-    elemen: 'Pengukuran',
+    elemen: 'Pemahaman IPAS (Sosial)',
     tujuanPembelajaran:
-      'Peserta didik dapat mengonversi satuan kecepatan dari km/menit ke meter per detik (m/s).',
+      'Peserta didik dapat mendeskripsikan berbagai kenampakan alam wilayah daratan dan perairan di Indonesia.',
     indikatorSoal:
-      'Disajikan jarak tempuh dan waktu seorang pelari maraton cilik, peserta didik dapat menghitung dan mengonversi kecepatan rata-rata ke satuan meter/detik.',
+      'Disajikan ciri-ciri dua kenampakan alam (dataran tinggi dan selat), peserta didik dapat menentukan nama kedua kenampakan alam tersebut secara berurutan.',
     levelKognitif: 'L2',
     bobotSkor: 1,
   },
   19: {
-    elemen: 'Geometri',
+    elemen: 'Pemahaman IPAS (Sains)',
     tujuanPembelajaran:
-      'Peserta didik dapat mengidentifikasi dan membedakan sifat-sifat bangun datar layang-layang melalui pilihan berganda kompleks.',
+      'Peserta didik dapat memilih tindakan manusia yang merupakan peran positif dalam menjaga keseimbangan ekosistem.',
     indikatorSoal:
-      'Disajikan tiga deskripsi sifat geometris bangun datar layang-layang, peserta didik dapat memilih semua pernyataan yang benar (lebih dari satu jawaban benar).',
+      'Disajikan gambar 10 kartu tindakan manusia terhadap lingkungan, peserta didik dapat memilih lebih dari satu pernyataan yang termasuk peran positif.',
     levelKognitif: 'L2',
     bobotSkor: 1,
   },
   20: {
-    elemen: 'Geometri',
+    elemen: 'Keterampilan Proses',
     tujuanPembelajaran:
-      'Peserta didik dapat menganalisis luas, keliling, dan estimasi nilai ekonomis lahan kebun berbentuk bangun datar.',
+      'Peserta didik dapat menganalisis luas wilayah daratan dan lautan Indonesia sebagai negara kepulauan dan maritim.',
     indikatorSoal:
-      'Disajikan ukuran kebun berbentuk persegi panjang dan harga jual per meter persegi, peserta didik dapat mengevaluasi dan memilih semua pernyataan yang bernilai benar.',
+      'Disajikan data luas daratan dan perairan laut Indonesia serta ciri kenampakan alam, peserta didik dapat memilih semua pernyataan yang benar.',
     levelKognitif: 'L3',
     bobotSkor: 1,
   },
   21: {
-    elemen: 'Bilangan',
+    elemen: 'Pemahaman IPAS (Sosial)',
     tujuanPembelajaran:
-      'Peserta didik dapat menerapkan operasi hitung campuran bilangan desimal dan satuan berat dalam belanja sehari-hari.',
+      'Peserta didik dapat mengklasifikasikan profesi masyarakat yang termasuk bidang usaha jasa/layanan.',
     indikatorSoal:
-      'Disajikan data belanja kebutuhan pokok beras dan gula pasir, peserta didik dapat memverifikasi kebenaran hitungan berat tiap jenis barang dan total berat belanjaan.',
+      'Disajikan gambar 5 profesi pekerja (pemadam kebakaran, petugas kebersihan, polisi, nelayan, dan dokter), peserta didik dapat memilih profesi yang termasuk bidang jasa/layanan.',
     levelKognitif: 'L2',
     bobotSkor: 1,
   },
   22: {
-    elemen: 'Aljabar',
+    elemen: 'Pemahaman IPAS (Sains)',
     tujuanPembelajaran:
-      'Peserta didik dapat menganalisis konsep aritmatika sosial mengenai bruto, neto, tara, modal, harga jual, dan keuntungan.',
+      'Peserta didik dapat mengevaluasi kebenaran konsep tahapan siklus air (evaporasi, kondensasi, presipitasi, dan infiltrasi).',
     indikatorSoal:
-      'Disajikan narasi pembelian buah dalam keranjang berkategori bruto dan tara, peserta didik dapat menentukan nilai kebenaran (Benar/Salah) pada 3 pernyataan terkait neto, modal, dan laba.',
-    levelKognitif: 'L3',
-    bobotSkor: 1,
-  },
-  23: {
-    elemen: 'Analisis Data dan Peluang',
-    tujuanPembelajaran:
-      'Peserta didik dapat menganalisis tabel distribusi frekuensi data tunggal dan menghubungkannya dengan kriteria ketercapaian (KKTP).',
-    indikatorSoal:
-      'Disajikan data frekuensi nilai ulangan dan batas KKTP sekolah, peserta didik dapat menentukan nilai kebenaran (Benar/Salah) pada 3 pernyataan terkait modus, jumlah siswa tuntas, dan persentase remedial.',
+      'Disajikan tiga pernyataan tentang tahapan siklus air dan peran hutan, peserta didik dapat menentukan nilai kebenaran (Benar/Salah) masing-masing pernyataan.',
     levelKognitif: 'L2',
     bobotSkor: 1,
   },
-  24: {
-    elemen: 'Pengukuran',
+  23: {
+    elemen: 'Pemahaman IPAS (Sains)',
     tujuanPembelajaran:
-      'Peserta didik dapat menganalisis volume balok dan kapasitas penampungan air dalam satuan liter.',
+      'Peserta didik dapat membedakan contoh ekosistem akuatik dan ekosistem terestrial beserta makhluk hidupnya.',
     indikatorSoal:
-      'Disajikan dimensi bak penampungan air balok dan kondisi keterisian 3/4 kapasitas, peserta didik dapat menentukan kebenaran (Benar/Salah) untuk volume penuh, volume isi, dan volume air yang perlu ditambahkan.',
+      'Disajikan tiga pernyataan mengenai klasifikasi ekosistem air, darat, dan adaptasi tumbuhan gurun, peserta didik dapat menentukan Benar/Salah untuk setiap pernyataan.',
+    levelKognitif: 'L1',
+    bobotSkor: 1,
+  },
+  24: {
+    elemen: 'Pemahaman IPAS (Sains)',
+    tujuanPembelajaran:
+      'Peserta didik dapat mengidentifikasi peran organisme dalam rantai makanan ekosistem laut dan danau.',
+    indikatorSoal:
+      'Disajikan tiga pernyataan tentang produsen dan konsumen pada ekosistem laut dan danau, peserta didik dapat menentukan Benar/Salah secara tepat.',
     levelKognitif: 'L2',
     bobotSkor: 1,
   },
   25: {
-    elemen: 'Geometri',
+    elemen: 'Keterampilan Proses',
     tujuanPembelajaran:
-      'Peserta didik dapat menerapkan rumus keliling dan luas lingkaran pada objek kontekstual meja hias bundar.',
+      'Peserta didik dapat menganalisis susunan tingkatan trofik pada piramida makanan.',
     indikatorSoal:
-      'Disajikan diameter meja bundar, peserta didik dapat mengevaluasi kebenaran (Benar/Salah) untuk panjang jari-jari, panjang renda hias keliling, dan luas permukaan kaca penutup.',
-    levelKognitif: 'L2',
-    bobotSkor: 1,
-  },
-  26: {
-    elemen: 'Aljabar',
-    tujuanPembelajaran:
-      'Peserta didik dapat menganalisis skala denah untuk menentukan ukuran panjang, lebar, dan luas sebenarnya.',
-    indikatorSoal:
-      'Disajikan denah lapangan upacara sekolah dengan skala 1 : 400, peserta didik dapat menilai kebenaran (Benar/Salah) dari pernyataan panjang sebenarnya, lebar sebenarnya, dan luas sebenarnya.',
-    levelKognitif: 'L2',
-    bobotSkor: 1,
-  },
-  27: {
-    elemen: 'Pengukuran',
-    tujuanPembelajaran:
-      'Peserta didik dapat menganalisis permasalahan jarak, waktu tempuh total, waktu istirahat, dan kecepatan gerak murni bus pariwisata.',
-    indikatorSoal:
-      'Disajikan jadwal keberangkatan bus karya wisata, waktu tiba, jarak tempuh, dan durasi istirahat, peserta didik dapat memverifikasi nilai kebenaran (Benar/Salah) pada total waktu, waktu gerak murni, dan kecepatan rata-rata saat melaju.',
+      'Disajikan tiga pernyataan tentang posisi produsen, herbivora, dan jumlah populasi konsumen puncak pada piramida makanan, peserta didik dapat menilai Benar/Salah.',
     levelKognitif: 'L3',
     bobotSkor: 1,
   },
-  28: {
-    elemen: 'Bilangan',
+  26: {
+    elemen: 'Keterampilan Proses',
     tujuanPembelajaran:
-      'Peserta didik dapat menyelesaikan operasi persentase dan pecahan terhadap kuantitas barang persediaan awal.',
+      'Peserta didik dapat menganalisis hubungan sebab-akibat dan upaya pemulihan keseimbangan ekosistem sawah.',
     indikatorSoal:
-      'Disajikan persediaan awal buku tulis di koperasi dan data penjualan hari Senin (persen) dan Selasa (pecahan), peserta didik dapat menentukan kebenaran (Benar/Salah) dari 3 pernyataan penjualan dan sisa stok.',
+      'Disajikan tiga pernyataan hubungan sebab-akibat perubahan jumlah tikus, ular, dan elang di sawah, peserta didik dapat menentukan Benar/Salah.',
+    levelKognitif: 'L3',
+    bobotSkor: 1,
+  },
+  27: {
+    elemen: 'Pemahaman IPAS (Sosial)',
+    tujuanPembelajaran:
+      'Peserta didik dapat membedakan karakteristik kenampakan perairan laut, samudra, dan teluk di Indonesia.',
+    indikatorSoal:
+      'Disajikan gambar tiga ikon kenampakan wilayah perairan beserta tiga pernyataan definisinya, peserta didik dapat menentukan Benar/Salah.',
+    levelKognitif: 'L2',
+    bobotSkor: 1,
+  },
+  28: {
+    elemen: 'Pemahaman IPAS (Sosial)',
+    tujuanPembelajaran:
+      'Peserta didik dapat membedakan jenis bidang usaha peternakan, pertambangan, dan perikanan.',
+    indikatorSoal:
+      'Disajikan tiga pernyataan tentang ruang lingkup usaha peternakan, pertambangan, dan perikanan, peserta didik dapat menentukan Benar/Salah.',
     levelKognitif: 'L1',
     bobotSkor: 1,
   },
   29: {
-    elemen: 'Bilangan',
+    elemen: 'Pemahaman IPAS (Sosial)',
     tujuanPembelajaran:
-      'Peserta didik dapat mengaplikasikan FPB dalam menentukan paket hadiah dan rincian isi barang per regu penerima.',
+      'Peserta didik dapat mengelompokkan aktivitas ekonomi masyarakat ke dalam produksi, distribusi, dan konsumsi.',
     indikatorSoal:
-      'Disajikan jumlah tiga perlengkapan hadiah lomba kebersihan kelas, peserta didik dapat mengevaluasi kebenaran (Benar/Salah) nilai FPB, banyak regu terbanyak penerima, dan komposisi isi barang per regu.',
+      'Disajikan tiga pernyataan contoh kegiatan ekonomi sehari-hari beserta pelakunya, peserta didik dapat menentukan Benar/Salah.',
     levelKognitif: 'L2',
     bobotSkor: 1,
   },
   30: {
-    elemen: 'Geometri',
+    elemen: 'Pemahaman IPAS (Sosial)',
     tujuanPembelajaran:
-      'Peserta didik dapat menganalisis koordinat Kartesius 4 titik untuk mengidentifikasi bentuk bangun datar, keliling, dan luas.',
+      'Peserta didik dapat menyimpulkan pentingnya kerja sama dalam keragaman sifat dan kepedulian lingkungan.',
     indikatorSoal:
-      'Disajikan 4 titik koordinat bidang Kartesius yang saling dihubungkan, peserta didik dapat menganalisis dan menentukan kebenaran (Benar/Salah) dari jenis bangun datar yang terbentuk, keliling, dan luasnya.',
-    levelKognitif: 'L3',
+      'Disajikan tiga pernyataan mengenai nilai kerja sama dalam perbedaan sifat dan kepedulian lingkungan, peserta didik dapat menentukan Benar/Salah.',
+    levelKognitif: 'L1',
     bobotSkor: 1,
   },
 };
@@ -349,7 +349,6 @@ export function formatCorrectAnswer(q: Question): string {
 export function getQuestionBlueprint(q: Question, index: number): QuestionBlueprint {
   const def = DEFAULT_BLUEPRINT_MAP[q.id];
 
-  // Gunakan data dari definisi atau field internal question, atau inferensi logis
   const elemen =
     q.elemen ||
     (def ? def.elemen : inferElemenFromTopic(q.topic));
@@ -362,7 +361,7 @@ export function getQuestionBlueprint(q: Question, index: number): QuestionBluepr
     q.tujuanPembelajaran ||
     (def
       ? def.tujuanPembelajaran
-      : `Peserta didik mampu menerapkan konsep materi ${q.topic} dalam menyelesaikan permasalahan matematika.`);
+      : `Peserta didik mampu memahami dan menerapkan konsep materi ${q.topic} dalam mata pelajaran IPAS.`);
 
   const indikatorSoal =
     q.indikatorSoal ||
@@ -390,22 +389,23 @@ export function getQuestionBlueprint(q: Question, index: number): QuestionBluepr
 
 function inferElemenFromTopic(topic: string): string {
   const t = topic.toLowerCase();
-  if (t.includes('bilangan') || t.includes('pecahan') || t.includes('fpb') || t.includes('kpk') || t.includes('pangkat')) {
-    return 'Bilangan';
+  if (
+    t.includes('ekonomi') ||
+    t.includes('usaha') ||
+    t.includes('jasa') ||
+    t.includes('kenampakan') ||
+    t.includes('daratan') ||
+    t.includes('perairan') ||
+    t.includes('sifat') ||
+    t.includes('karakter') ||
+    t.includes('kerja sama')
+  ) {
+    return 'Pemahaman IPAS (Sosial)';
   }
-  if (t.includes('lingkaran') || t.includes('bangun datar') || t.includes('kubus') || t.includes('geometri') || t.includes('layang')) {
-    return 'Geometri';
+  if (t.includes('sebab-akibat') || t.includes('analisis')) {
+    return 'Keterampilan Proses';
   }
-  if (t.includes('debit') || t.includes('volume') || t.includes('kecepatan') || t.includes('jarak')) {
-    return 'Pengukuran';
-  }
-  if (t.includes('skala') || t.includes('perbandingan') || t.includes('diskon') || t.includes('bruto') || t.includes('aritmatika')) {
-    return 'Aljabar';
-  }
-  if (t.includes('statistika') || t.includes('diagram') || t.includes('mean') || t.includes('modus') || t.includes('median')) {
-    return 'Analisis Data dan Peluang';
-  }
-  return 'Bilangan';
+  return 'Pemahaman IPAS (Sains)';
 }
 
 function inferLevelFromDifficulty(diff: Difficulty): CognitiveLevel {
@@ -421,21 +421,14 @@ export function getBlueprintStatistics(questions: Question[]) {
   const total = questions.length;
   const blueprints = questions.map((q, idx) => getQuestionBlueprint(q, idx));
 
-  // Distribusi Elemen
   const elemenCountMap: Record<string, number> = {};
-  // Distribusi Level Kognitif
   const levelCountMap: Record<CognitiveLevel, number> = { L1: 0, L2: 0, L3: 0 };
-  // Distribusi Tingkat Kesukaran
   const diffCountMap: Record<Difficulty, number> = { Mudah: 0, Sedang: 0, Sukar: 0 };
-  // Distribusi Bentuk Soal
   const typeCountMap: Record<string, number> = { pg: 0, pgk: 0, pgk_kategori: 0 };
 
   blueprints.forEach((bp, idx) => {
-    // Elemen
     elemenCountMap[bp.elemen] = (elemenCountMap[bp.elemen] || 0) + 1;
-    // Level
     levelCountMap[bp.levelKognitif] = (levelCountMap[bp.levelKognitif] || 0) + 1;
-    // Diff
     const q = questions[idx];
     if (q) {
       diffCountMap[q.difficulty] = (diffCountMap[q.difficulty] || 0) + 1;

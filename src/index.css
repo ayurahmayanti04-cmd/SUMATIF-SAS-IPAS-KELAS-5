@@ -1,1 +1,18 @@
 @import "tailwindcss";
+
+@layer utilities {
+  .bg-ipas-theme {
+    background-color: #f0f9ff;
+    background-image:
+      radial-gradient(at 8% 12%, rgba(14, 165, 233, 0.16) 0px, transparent 48%),
+      radial-gradient(at 92% 10%, rgba(245, 158, 11, 0.15) 0px, transparent 45%),
+      radial-gradient(at 85% 82%, rgba(16, 185, 129, 0.14) 0px, transparent 50%),
+      radial-gradient(at 15% 85%, rgba(59, 130, 246, 0.13) 0px, transparent 48%),
+      linear-gradient(165deg, #eff8ff 0%, #f3fbf7 48%, #fffdf2 82%, #ecfeff 100%);
+  }
+
+  .bg-ipas-grid {
+    background-image: radial-gradient(rgba(30, 64, 175, 0.08) 1px, transparent 1px);
+    background-size: 26px 26px;
+  }
+}

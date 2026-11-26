@@ -30,16 +30,16 @@ export interface StatementItem {
 
 export type CognitiveLevel = 'L1' | 'L2' | 'L3';
 export type KurikulumElemen =
-  | 'Bilangan'
-  | 'Aljabar'
-  | 'Pengukuran'
-  | 'Geometri'
-  | 'Analisis Data dan Peluang';
+  | 'Pemahaman IPAS (Sains)'
+  | 'Pemahaman IPAS (Sosial)'
+  | 'Keterampilan Proses';
 
 export interface Question {
   id: number;
   type: QuestionType;
   text: string;
+  imageUrl?: string;
+  imageCaption?: string;
   options?: OptionItem[]; // Untuk 'pg' (4 opsi) dan 'pgk' (3 opsi)
   statements?: StatementItem[]; // Untuk 'pgk_kategori' (3 pernyataan)
   correctAnswer?: string | string[]; // string untuk 'pg' (e.g. 'B'), array untuk 'pgk' (e.g. ['A', 'C'])
