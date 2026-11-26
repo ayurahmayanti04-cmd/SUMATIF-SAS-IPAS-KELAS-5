@@ -1,0 +1,8 @@
+{
+  "name": "Remix Tes Sumatif IPAS",
+  "description": "Aplikasi Tes Sumatif IPAS",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
